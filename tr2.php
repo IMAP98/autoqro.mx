@@ -4,7 +4,7 @@ include('./back-end/php/conexion.php');
 
 $conn = connect();
 
-$stmt = $conn->prepare("CALL sp_Select_TR2;");
+$stmt = $conn->prepare("CALL STORE_PROCEDURE_NAME;");
 $stmt->execute();
 
 $result = $stmt->fetchAll();
